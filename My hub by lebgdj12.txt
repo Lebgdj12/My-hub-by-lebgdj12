@@ -3,11 +3,11 @@ local ThunderToggleUI = Instance.new("TextButton")
 local ThunderCornerUI = Instance.new("UICorner")
 local ThunderImageUI = Instance.new("ImageLabel")
 
-        ScreenGui.Name = "ScreenGui"
-        ScreenGui.Parent = game.CoreGui
-        ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	ThunderScreen.Name = "ThunderScreen"
+        ThunderScreen.Parent = game.CoreGui
+        ThunderScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-        ThunderToggleUI.Name = "ScreenGui"
+        ThunderToggleUI.Name = "ThunderToggleUI"
         ThunderToggleUI.Parent = ScreenGui
         ThunderToggleUI.BackgroundColor3 = Color3.fromRGB(31,31,31)
         ThunderToggleUI.BorderSizePixel = 0
@@ -34,13 +34,6 @@ local ThunderImageUI = Instance.new("ImageLabel")
         ThunderImageUI.Position = UDim2.new(0.0, 0, 0.0, 0)
         ThunderImageUI.Size = UDim2.new(0, 50, 0, 50)
         ThunderImageUI.Image = "http://www.roblox.com/asset/?id=12511245920"
-local TweenService = game:GetService("TweenService")
-local RunService = game:GetService("RunService")
-local UserInputService = game:GetService("UserInputService")
-local Players = game:GetService("Players")
-local LocalPlayer = Players.LocalPlayer
-local Mouse = LocalPlayer:GetMouse()
-local HTTPService = game:GetService("HttpService")
 
 local Library = {
 	Themes = {
