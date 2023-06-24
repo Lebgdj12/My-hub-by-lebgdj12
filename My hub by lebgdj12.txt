@@ -3,12 +3,12 @@ local ThunderToggleUI = Instance.new("TextButton")
 local ThunderCornerUI = Instance.new("UICorner")
 local ThunderImageUI = Instance.new("ImageLabel")
 
-        ThunderScreen.Name = "ThunderScreen"
+        ThunderScreen.Name = "ScreenGui"
         ThunderScreen.Parent = game.CoreGui
         ThunderScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
         ThunderToggleUI.Name = "ThunderToggleUI"
-        ThunderToggleUI.Parent = ThunderScreen
+        ThunderToggleUI.Parent = ScreenGui
         ThunderToggleUI.BackgroundColor3 = Color3.fromRGB(31,31,31)
         ThunderToggleUI.BorderSizePixel = 0
         ThunderToggleUI.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
