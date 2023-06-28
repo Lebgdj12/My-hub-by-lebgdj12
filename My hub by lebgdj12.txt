@@ -3559,3 +3559,19 @@ scrollingFrame.Position = UDim2.new(0, 5, 0, 25)
 scrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
 scrollingFrame.Parent = frame
 scrollingFrame.BackgroundTransparency = 1
+
+minimizeButton.MouseButton1Click:Connect(function()
+    if frame.Size == UDim2.new(0, 300, 0, 400) then
+        frame.Size = UDim2.new(0, 30, 0, 30)
+        minimizeButton.Text = "+"
+        minimizeButton.Position = UDim2.new(1, -25, 0, 5)
+    else
+        frame.Size = UDim2.new(0, 300, 0, 400)
+        minimizeButton.Text = "-"
+        minimizeButton.Position = UDim2.new(1, -25, 0, 5)
+    end
+end)
+
+closeButton.MouseButton1Click:Connect(function()
+    gui:Destroy()
+end)
